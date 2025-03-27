@@ -7,50 +7,50 @@ namespace Relocation_Section_Editor
     public class PeHeader
     {
         // IMAGE_FILE_HEADER > Machine
-        public const UInt16 IMAGE_FILE_MACHINE_I386 = 0x014c;
-        public const UInt16 IMAGE_FILE_MACHINE_IA64 = 0x0200;
+        public const UInt16 IMAGE_FILE_MACHINE_I386  = 0x014c;
+        public const UInt16 IMAGE_FILE_MACHINE_IA64  = 0x0200;
         public const UInt16 IMAGE_FILE_MACHINE_AMD64 = 0x8664;
 
         // IMAGE_FILE_HEADER > Characteristics
-        public const UInt16 IMAGE_FILE_RELOCS_STRIPPED = 0x0001;
-        public const UInt16 IMAGE_FILE_EXECUTABLE_IMAGE = 0x0002;
-        public const UInt16 IMAGE_FILE_LINE_NUMS_STRIPPED = 0x0004;
-        public const UInt16 IMAGE_FILE_LOCAL_SYMS_STRIPPED = 0x0008;
-        public const UInt16 IMAGE_FILE_AGGRESIVE_WS_TRIM = 0x0010;
-        public const UInt16 IMAGE_FILE_LARGE_ADDRESS_AWARE = 0x0020;
-        public const UInt16 IMAGE_FILE_BYTES_REVERSED_LO = 0x0080;
-        public const UInt16 IMAGE_FILE_32BIT_MACHINE = 0x0100;
-        public const UInt16 IMAGE_FILE_DEBUG_STRIPPED = 0x0200;
+        public const UInt16 IMAGE_FILE_RELOCS_STRIPPED         = 0x0001;
+        public const UInt16 IMAGE_FILE_EXECUTABLE_IMAGE        = 0x0002;
+        public const UInt16 IMAGE_FILE_LINE_NUMS_STRIPPED      = 0x0004;
+        public const UInt16 IMAGE_FILE_LOCAL_SYMS_STRIPPED     = 0x0008;
+        public const UInt16 IMAGE_FILE_AGGRESIVE_WS_TRIM       = 0x0010;
+        public const UInt16 IMAGE_FILE_LARGE_ADDRESS_AWARE     = 0x0020;
+        public const UInt16 IMAGE_FILE_BYTES_REVERSED_LO       = 0x0080;
+        public const UInt16 IMAGE_FILE_32BIT_MACHINE           = 0x0100;
+        public const UInt16 IMAGE_FILE_DEBUG_STRIPPED          = 0x0200;
         public const UInt16 IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP = 0x0400;
-        public const UInt16 IMAGE_FILE_NET_RUN_FROM_SWAP = 0x0800;
-        public const UInt16 IMAGE_FILE_SYSTEM = 0x1000;
-        public const UInt16 IMAGE_FILE_DLL = 0x2000;
-        public const UInt16 IMAGE_FILE_UP_SYSTEM_ONLY = 0x4000;
-        public const UInt16 IMAGE_FILE_BYTES_REVERSED_HI = 0x8000;
+        public const UInt16 IMAGE_FILE_NET_RUN_FROM_SWAP       = 0x0800;
+        public const UInt16 IMAGE_FILE_SYSTEM                  = 0x1000;
+        public const UInt16 IMAGE_FILE_DLL                     = 0x2000;
+        public const UInt16 IMAGE_FILE_UP_SYSTEM_ONLY          = 0x4000;
+        public const UInt16 IMAGE_FILE_BYTES_REVERSED_HI       = 0x8000;
 
         // IMAGE_OPTIONAL_HEADER > Subsystem
-        public const UInt16 IMAGE_SUBSYSTEM_UNKNOWN = 0;
-        public const UInt16 IMAGE_SUBSYSTEM_NATIVE = 1;
-        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_GUI = 2;
-        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_CUI = 3;
-        public const UInt16 IMAGE_SUBSYSTEM_OS2_CUI = 5;
-        public const UInt16 IMAGE_SUBSYSTEM_POSIX_CUI = 7;
-        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_CE_GUI = 9;
-        public const UInt16 IMAGE_SUBSYSTEM_EFI_APPLICATION = 10;
-        public const UInt16 IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER = 11;
-        public const UInt16 IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER = 12;
-        public const UInt16 IMAGE_SUBSYSTEM_EFI_ROM = 13;
-        public const UInt16 IMAGE_SUBSYSTEM_XBOX = 14;
+        public const UInt16 IMAGE_SUBSYSTEM_UNKNOWN                  = 0;
+        public const UInt16 IMAGE_SUBSYSTEM_NATIVE                   = 1;
+        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_GUI              = 2;
+        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_CUI              = 3;
+        public const UInt16 IMAGE_SUBSYSTEM_OS2_CUI                  = 5;
+        public const UInt16 IMAGE_SUBSYSTEM_POSIX_CUI                = 7;
+        public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_CE_GUI           = 9;
+        public const UInt16 IMAGE_SUBSYSTEM_EFI_APPLICATION          = 10;
+        public const UInt16 IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER  = 11;
+        public const UInt16 IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER       = 12;
+        public const UInt16 IMAGE_SUBSYSTEM_EFI_ROM                  = 13;
+        public const UInt16 IMAGE_SUBSYSTEM_XBOX                     = 14;
         public const UInt16 IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION = 16;
 
         // IMAGE_OPTIONAL_HEADER > DllCharacteristics
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE = 0x0040;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY = 0x0080;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_NX_COMPAT = 0x0100;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_ISOLATION = 0x0200;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_SEH = 0x0400;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_BIND = 0x0800;
-        public const UInt16 IMAGE_DLLCHARACTERISTICS_WDM_DRIVER = 0x2000;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE          = 0x0040;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY       = 0x0080;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_NX_COMPAT             = 0x0100;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_ISOLATION          = 0x0200;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_SEH                = 0x0400;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_NO_BIND               = 0x0800;
+        public const UInt16 IMAGE_DLLCHARACTERISTICS_WDM_DRIVER            = 0x2000;
         public const UInt16 IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE = 0x8000;
 
         // IMAGE_DOS_HEADER > e_magic
@@ -64,20 +64,20 @@ namespace Relocation_Section_Editor
         public const UInt16 IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b;
 
         // IMAGE_DATA_DIRECTORY[IMAGE_OPTIONAL_HEADER > NumberOfRvaAndSizes]
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_EXPORT = 0;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_IMPORT = 1;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_RESOURCE = 2;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_EXCEPTION = 3;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_SECURITY = 4;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_BASERELOC = 5;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_DEBUG = 6;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_ARCHITECTURE = 7;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_GLOBALPTR = 8;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_TLS = 9;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG = 10;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT = 11;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_IAT = 12;
-        public const UInt16 IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT = 13;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_EXPORT         = 0;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_IMPORT         = 1;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_RESOURCE       = 2;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_EXCEPTION      = 3;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_SECURITY       = 4;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_BASERELOC      = 5;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_DEBUG          = 6;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_ARCHITECTURE   = 7;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_GLOBALPTR      = 8;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_TLS            = 9;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG    = 10;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT   = 11;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_IAT            = 12;
+        public const UInt16 IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT   = 13;
         public const UInt16 IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR = 14;
 
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -267,47 +267,47 @@ namespace Relocation_Section_Editor
         [Flags]
         public enum DataSectionFlags : UInt32
         {
-            TypeReg = 0x00000000,
-            TypeDsect = 0x00000001,
-            TypeNoLoad = 0x00000002,
-            TypeGroup = 0x00000004,
-            TypeNoPadded = 0x00000008,
-            TypeCopy = 0x00000010,
-            ContentCode = 0x00000020,
-            ContentInitializedData = 0x00000040,
-            ContentUninitializedData = 0x00000080,
-            LinkOther = 0x00000100,
-            LinkInfo = 0x00000200,
-            TypeOver = 0x00000400,
-            LinkRemove = 0x00000800,
-            LinkComDat = 0x00001000,
-            NoDeferSpecExceptions = 0x00004000,
-            RelativeGP = 0x00008000,
-            MemoryPurgeable = 0x00020000,
-            MemoryLocked = 0x00040000,
-            MemoryPreload = 0x00080000,
-            Align1Bytes = 0x00100000,
-            Align2Bytes = 0x00200000,
-            Align4Bytes = 0x00300000,
-            Align8Bytes = 0x00400000,
-            Align16Bytes = 0x00500000,
-            Align32Bytes = 0x00600000,
-            Align64Bytes = 0x00700000,
-            Align128Bytes = 0x00800000,
-            Align256Bytes = 0x00900000,
-            Align512Bytes = 0x00A00000,
-            Align1024Bytes = 0x00B00000,
-            Align2048Bytes = 0x00C00000,
-            Align4096Bytes = 0x00D00000,
-            Align8192Bytes = 0x00E00000,
+            TypeReg                        = 0x00000000,
+            TypeDsect                      = 0x00000001,
+            TypeNoLoad                     = 0x00000002,
+            TypeGroup                      = 0x00000004,
+            TypeNoPadded                   = 0x00000008,
+            TypeCopy                       = 0x00000010,
+            ContentCode                    = 0x00000020,
+            ContentInitializedData         = 0x00000040,
+            ContentUninitializedData       = 0x00000080,
+            LinkOther                      = 0x00000100,
+            LinkInfo                       = 0x00000200,
+            TypeOver                       = 0x00000400,
+            LinkRemove                     = 0x00000800,
+            LinkComDat                     = 0x00001000,
+            NoDeferSpecExceptions          = 0x00004000,
+            RelativeGP                     = 0x00008000,
+            MemoryPurgeable                = 0x00020000,
+            MemoryLocked                   = 0x00040000,
+            MemoryPreload                  = 0x00080000,
+            Align1Bytes                    = 0x00100000,
+            Align2Bytes                    = 0x00200000,
+            Align4Bytes                    = 0x00300000,
+            Align8Bytes                    = 0x00400000,
+            Align16Bytes                   = 0x00500000,
+            Align32Bytes                   = 0x00600000,
+            Align64Bytes                   = 0x00700000,
+            Align128Bytes                  = 0x00800000,
+            Align256Bytes                  = 0x00900000,
+            Align512Bytes                  = 0x00A00000,
+            Align1024Bytes                 = 0x00B00000,
+            Align2048Bytes                 = 0x00C00000,
+            Align4096Bytes                 = 0x00D00000,
+            Align8192Bytes                 = 0x00E00000,
             LinkExtendedRelocationOverflow = 0x01000000,
-            MemoryDiscardable = 0x02000000,
-            MemoryNotCached = 0x04000000,
-            MemoryNotPaged = 0x08000000,
-            MemoryShared = 0x10000000,
-            MemoryExecute = 0x20000000,
-            MemoryRead = 0x40000000,
-            MemoryWrite = 0x80000000
+            MemoryDiscardable              = 0x02000000,
+            MemoryNotCached                = 0x04000000,
+            MemoryNotPaged                 = 0x08000000,
+            MemoryShared                   = 0x10000000,
+            MemoryExecute                  = 0x20000000,
+            MemoryRead                     = 0x40000000,
+            MemoryWrite                    = 0x80000000
         }
 
         [Serializable, StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -320,17 +320,17 @@ namespace Relocation_Section_Editor
         [Flags]
         public enum BASE_RELOCATION_TYPE : Byte
         {
-            IMAGE_REL_BASED_ABSOLUTE = 0,
-            IMAGE_REL_BASED_HIGH = 1,
-            IMAGE_REL_BASED_LOW = 2,
-            IMAGE_REL_BASED_HIGHLOW = 3,
-            IMAGE_REL_BASED_HIGHADJ = 4,
-            IMAGE_REL_BASED_MIPS_JMPADDR = 5,
-            IMAGE_REL_BASED_SECTION = 6,
-            IMAGE_REL_BASED_REL32 = 7,
-            IMAGE_REL_BASED_RESERVED = 8,
+            IMAGE_REL_BASED_ABSOLUTE       = 0,
+            IMAGE_REL_BASED_HIGH           = 1,
+            IMAGE_REL_BASED_LOW            = 2,
+            IMAGE_REL_BASED_HIGHLOW        = 3,
+            IMAGE_REL_BASED_HIGHADJ        = 4,
+            IMAGE_REL_BASED_MIPS_JMPADDR   = 5,
+            IMAGE_REL_BASED_SECTION        = 6,
+            IMAGE_REL_BASED_REL32          = 7,
+            IMAGE_REL_BASED_RESERVED       = 8,
             IMAGE_REL_BASED_MIPS_JMPADDR16 = 9,
-            IMAGE_REL_BASED_DIR64 = 10
+            IMAGE_REL_BASED_DIR64          = 10
         }
 
         public IMAGE_DOS_HEADER DosHeader { get; }
