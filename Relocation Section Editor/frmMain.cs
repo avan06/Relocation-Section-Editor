@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Diagnostics;
 
 namespace Relocation_Section_Editor
 {
@@ -334,6 +328,21 @@ namespace Relocation_Section_Editor
                 MessageBox.Show("File not saved", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
                 this.Text = "Relocation Section Editor - " + rel.GetPath();
+        }
+
+        private void frmMain_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop) ? DragDropEffects.Copy : DragDropEffects.None;
+        }
+
+        private void frmMain_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            if (files == null || files.Length == 0) return;
+
+            argPath = files[0];
+            mnuMainFileOpen_Click(sender, e);
         }
     }
 }

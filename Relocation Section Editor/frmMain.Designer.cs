@@ -70,6 +70,7 @@
             this.staPbSize = new System.Windows.Forms.ToolStripProgressBar();
             this.dlgSave = new System.Windows.Forms.SaveFileDialog();
             this.mnuMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sptMain)).BeginInit();
             this.sptMain.Panel1.SuspendLayout();
             this.sptMain.Panel2.SuspendLayout();
             this.sptMain.SuspendLayout();
@@ -88,7 +89,8 @@
             this.mnuMainHelp});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1221, 28);
+            this.mnuMain.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.mnuMain.Size = new System.Drawing.Size(916, 24);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -101,14 +103,14 @@
             this.toolStripSeparator1,
             this.mnuMainFileExit});
             this.mnuMainFile.Name = "mnuMainFile";
-            this.mnuMainFile.Size = new System.Drawing.Size(46, 24);
+            this.mnuMainFile.Size = new System.Drawing.Size(38, 20);
             this.mnuMainFile.Text = "&File";
             // 
             // mnuMainFileOpen
             // 
             this.mnuMainFileOpen.Name = "mnuMainFileOpen";
             this.mnuMainFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mnuMainFileOpen.Size = new System.Drawing.Size(242, 26);
+            this.mnuMainFileOpen.Size = new System.Drawing.Size(202, 22);
             this.mnuMainFileOpen.Text = "&Open...";
             this.mnuMainFileOpen.Click += new System.EventHandler(this.mnuMainFileOpen_Click);
             // 
@@ -116,7 +118,7 @@
             // 
             this.mnuMainFileSave.Name = "mnuMainFileSave";
             this.mnuMainFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mnuMainFileSave.Size = new System.Drawing.Size(242, 26);
+            this.mnuMainFileSave.Size = new System.Drawing.Size(202, 22);
             this.mnuMainFileSave.Text = "&Save";
             this.mnuMainFileSave.Click += new System.EventHandler(this.mnuMainFileSave_Click);
             // 
@@ -125,20 +127,20 @@
             this.mnuMainFileSaveAs.Name = "mnuMainFileSaveAs";
             this.mnuMainFileSaveAs.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
-            this.mnuMainFileSaveAs.Size = new System.Drawing.Size(242, 26);
+            this.mnuMainFileSaveAs.Size = new System.Drawing.Size(202, 22);
             this.mnuMainFileSaveAs.Text = "Save &As...";
             this.mnuMainFileSaveAs.Click += new System.EventHandler(this.mnuMainFileSaveAs_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
             // 
             // mnuMainFileExit
             // 
             this.mnuMainFileExit.Name = "mnuMainFileExit";
             this.mnuMainFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.mnuMainFileExit.Size = new System.Drawing.Size(242, 26);
+            this.mnuMainFileExit.Size = new System.Drawing.Size(202, 22);
             this.mnuMainFileExit.Text = "&Exit";
             this.mnuMainFileExit.Click += new System.EventHandler(this.mnuMainFileExit_Click);
             // 
@@ -147,13 +149,13 @@
             this.mnuMainHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuMainHelpAbout});
             this.mnuMainHelp.Name = "mnuMainHelp";
-            this.mnuMainHelp.Size = new System.Drawing.Size(30, 24);
+            this.mnuMainHelp.Size = new System.Drawing.Size(25, 20);
             this.mnuMainHelp.Text = "&?";
             // 
             // mnuMainHelpAbout
             // 
             this.mnuMainHelpAbout.Name = "mnuMainHelpAbout";
-            this.mnuMainHelpAbout.Size = new System.Drawing.Size(133, 26);
+            this.mnuMainHelpAbout.Size = new System.Drawing.Size(109, 22);
             this.mnuMainHelpAbout.Text = "&About";
             this.mnuMainHelpAbout.Click += new System.EventHandler(this.mnuMainHelpAbout_Click);
             // 
@@ -161,8 +163,7 @@
             // 
             this.sptMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sptMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.sptMain.Location = new System.Drawing.Point(0, 28);
-            this.sptMain.Margin = new System.Windows.Forms.Padding(4);
+            this.sptMain.Location = new System.Drawing.Point(0, 24);
             this.sptMain.Name = "sptMain";
             // 
             // sptMain.Panel1
@@ -172,9 +173,8 @@
             // sptMain.Panel2
             // 
             this.sptMain.Panel2.Controls.Add(this.grpRelocation);
-            this.sptMain.Size = new System.Drawing.Size(1221, 515);
+            this.sptMain.Size = new System.Drawing.Size(916, 381);
             this.sptMain.SplitterDistance = 397;
-            this.sptMain.SplitterWidth = 5;
             this.sptMain.TabIndex = 1;
             // 
             // grpPage
@@ -182,10 +182,8 @@
             this.grpPage.Controls.Add(this.lvPage);
             this.grpPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpPage.Location = new System.Drawing.Point(0, 0);
-            this.grpPage.Margin = new System.Windows.Forms.Padding(4);
             this.grpPage.Name = "grpPage";
-            this.grpPage.Padding = new System.Windows.Forms.Padding(4);
-            this.grpPage.Size = new System.Drawing.Size(397, 515);
+            this.grpPage.Size = new System.Drawing.Size(397, 381);
             this.grpPage.TabIndex = 0;
             this.grpPage.TabStop = false;
             this.grpPage.Text = "Page";
@@ -203,11 +201,10 @@
             this.lvPage.GridLines = true;
             this.lvPage.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvPage.HideSelection = false;
-            this.lvPage.Location = new System.Drawing.Point(4, 19);
-            this.lvPage.Margin = new System.Windows.Forms.Padding(4);
+            this.lvPage.Location = new System.Drawing.Point(3, 18);
             this.lvPage.MultiSelect = false;
             this.lvPage.Name = "lvPage";
-            this.lvPage.Size = new System.Drawing.Size(389, 492);
+            this.lvPage.Size = new System.Drawing.Size(391, 360);
             this.lvPage.TabIndex = 0;
             this.lvPage.UseCompatibleStateImageBehavior = false;
             this.lvPage.View = System.Windows.Forms.View.Details;
@@ -241,26 +238,26 @@
             this.toolStripSeparator3,
             this.cmnuPagesDelete});
             this.cmnuPages.Name = "cmnuPages";
-            this.cmnuPages.Size = new System.Drawing.Size(188, 58);
+            this.cmnuPages.Size = new System.Drawing.Size(166, 54);
             // 
             // cmnuPagesAdd
             // 
             this.cmnuPagesAdd.Name = "cmnuPagesAdd";
             this.cmnuPagesAdd.ShortcutKeys = System.Windows.Forms.Keys.Insert;
-            this.cmnuPagesAdd.Size = new System.Drawing.Size(187, 24);
+            this.cmnuPagesAdd.Size = new System.Drawing.Size(165, 22);
             this.cmnuPagesAdd.Text = "&Add";
             this.cmnuPagesAdd.Click += new System.EventHandler(this.mnuAdd_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(184, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(162, 6);
             // 
             // cmnuPagesDelete
             // 
             this.cmnuPagesDelete.Name = "cmnuPagesDelete";
             this.cmnuPagesDelete.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Delete)));
-            this.cmnuPagesDelete.Size = new System.Drawing.Size(187, 24);
+            this.cmnuPagesDelete.Size = new System.Drawing.Size(165, 22);
             this.cmnuPagesDelete.Text = "&Delete";
             this.cmnuPagesDelete.Click += new System.EventHandler(this.cmnuPagesDelete_Click);
             // 
@@ -269,10 +266,8 @@
             this.grpRelocation.Controls.Add(this.lvRelocation);
             this.grpRelocation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpRelocation.Location = new System.Drawing.Point(0, 0);
-            this.grpRelocation.Margin = new System.Windows.Forms.Padding(4);
             this.grpRelocation.Name = "grpRelocation";
-            this.grpRelocation.Padding = new System.Windows.Forms.Padding(4);
-            this.grpRelocation.Size = new System.Drawing.Size(819, 515);
+            this.grpRelocation.Size = new System.Drawing.Size(515, 381);
             this.grpRelocation.TabIndex = 0;
             this.grpRelocation.TabStop = false;
             this.grpRelocation.Text = "Relocation";
@@ -291,11 +286,10 @@
             this.lvRelocation.GridLines = true;
             this.lvRelocation.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvRelocation.HideSelection = false;
-            this.lvRelocation.Location = new System.Drawing.Point(4, 19);
-            this.lvRelocation.Margin = new System.Windows.Forms.Padding(4);
+            this.lvRelocation.Location = new System.Drawing.Point(3, 18);
             this.lvRelocation.MultiSelect = false;
             this.lvRelocation.Name = "lvRelocation";
-            this.lvRelocation.Size = new System.Drawing.Size(811, 492);
+            this.lvRelocation.Size = new System.Drawing.Size(509, 360);
             this.lvRelocation.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvRelocation.TabIndex = 0;
             this.lvRelocation.UseCompatibleStateImageBehavior = false;
@@ -335,13 +329,13 @@
             this.toolStripSeparator2,
             this.cmnuRelocationsDelete});
             this.cmnuRelocations.Name = "cmnuRelocations";
-            this.cmnuRelocations.Size = new System.Drawing.Size(155, 82);
+            this.cmnuRelocations.Size = new System.Drawing.Size(138, 76);
             // 
             // cmnuRelocationsAdd
             // 
             this.cmnuRelocationsAdd.Name = "cmnuRelocationsAdd";
             this.cmnuRelocationsAdd.ShortcutKeys = System.Windows.Forms.Keys.Insert;
-            this.cmnuRelocationsAdd.Size = new System.Drawing.Size(154, 24);
+            this.cmnuRelocationsAdd.Size = new System.Drawing.Size(137, 22);
             this.cmnuRelocationsAdd.Text = "&Add";
             this.cmnuRelocationsAdd.Click += new System.EventHandler(this.mnuAdd_Click);
             // 
@@ -349,20 +343,20 @@
             // 
             this.cmnuRelocationsEdit.Name = "cmnuRelocationsEdit";
             this.cmnuRelocationsEdit.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.cmnuRelocationsEdit.Size = new System.Drawing.Size(154, 24);
+            this.cmnuRelocationsEdit.Size = new System.Drawing.Size(137, 22);
             this.cmnuRelocationsEdit.Text = "&Edit";
             this.cmnuRelocationsEdit.Click += new System.EventHandler(this.mnuRelocationsEdit_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(151, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(134, 6);
             // 
             // cmnuRelocationsDelete
             // 
             this.cmnuRelocationsDelete.Name = "cmnuRelocationsDelete";
             this.cmnuRelocationsDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.cmnuRelocationsDelete.Size = new System.Drawing.Size(154, 24);
+            this.cmnuRelocationsDelete.Size = new System.Drawing.Size(137, 22);
             this.cmnuRelocationsDelete.Text = "&Delete";
             this.cmnuRelocationsDelete.Click += new System.EventHandler(this.cmuRelocationsDelete_Click);
             // 
@@ -375,61 +369,63 @@
             this.staLblCurrentSize,
             this.staLblMaxSize,
             this.staPbSize});
-            this.staInfo.Location = new System.Drawing.Point(0, 543);
+            this.staInfo.Location = new System.Drawing.Point(0, 405);
             this.staInfo.Name = "staInfo";
-            this.staInfo.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.staInfo.Size = new System.Drawing.Size(1221, 26);
+            this.staInfo.Size = new System.Drawing.Size(916, 22);
             this.staInfo.TabIndex = 1;
             this.staInfo.Text = "statusStrip1";
             // 
             // staLblImageBase
             // 
             this.staLblImageBase.Name = "staLblImageBase";
-            this.staLblImageBase.Size = new System.Drawing.Size(89, 20);
+            this.staLblImageBase.Size = new System.Drawing.Size(76, 17);
             this.staLblImageBase.Text = "Image base:";
             // 
             // staLblVirtualAddress
             // 
             this.staLblVirtualAddress.Name = "staLblVirtualAddress";
-            this.staLblVirtualAddress.Size = new System.Drawing.Size(110, 20);
+            this.staLblVirtualAddress.Size = new System.Drawing.Size(93, 17);
             this.staLblVirtualAddress.Text = "Virtual address:";
             // 
             // staLblCurrentSize
             // 
             this.staLblCurrentSize.Name = "staLblCurrentSize";
-            this.staLblCurrentSize.Size = new System.Drawing.Size(89, 20);
+            this.staLblCurrentSize.Size = new System.Drawing.Size(75, 17);
             this.staLblCurrentSize.Text = "Current size:";
             // 
             // staLblMaxSize
             // 
             this.staLblMaxSize.Name = "staLblMaxSize";
-            this.staLblMaxSize.Size = new System.Drawing.Size(69, 20);
+            this.staLblMaxSize.Size = new System.Drawing.Size(59, 17);
             this.staLblMaxSize.Text = "Max size:";
             // 
             // staPbSize
             // 
             this.staPbSize.Name = "staPbSize";
-            this.staPbSize.Size = new System.Drawing.Size(133, 18);
+            this.staPbSize.Size = new System.Drawing.Size(100, 16);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AllowDrop = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1221, 569);
+            this.ClientSize = new System.Drawing.Size(916, 427);
             this.Controls.Add(this.sptMain);
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.staInfo);
             this.MainMenuStrip = this.mnuMain;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relocation Section Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.frmMain_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmMain_DragEnter);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.sptMain.Panel1.ResumeLayout(false);
             this.sptMain.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sptMain)).EndInit();
             this.sptMain.ResumeLayout(false);
             this.grpPage.ResumeLayout(false);
             this.cmnuPages.ResumeLayout(false);
